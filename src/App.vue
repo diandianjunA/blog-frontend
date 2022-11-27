@@ -167,8 +167,7 @@ export default {
     let routerData;
     let pageInfo;
     let timer;
-    const baseUrl='http://www.diandianjun.com.cn:8082';
-    // const baseUrl='http://localhost:8082';
+    const baseUrl='自己服务器的ip';
     let categoryId=0;
     let pictureList=[
         'http://www.diandianjun.com.cn:8080/resource/blog/dora1.jpg',
