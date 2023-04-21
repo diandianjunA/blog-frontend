@@ -18,6 +18,7 @@ import '@kangc/v-md-editor/lib/plugins/emoji/emoji.css'
 import createLineNumbertPlugin from '@kangc/v-md-editor/lib/plugins/line-number/index'
 import createCopyCodePlugin from '@kangc/v-md-editor/lib/plugins/copy-code/index'
 import '@kangc/v-md-editor/lib/plugins/copy-code/copy-code.css'
+import createKatexPlugin from '@kangc/v-md-editor/lib/plugins/katex/cdn';
 
 VMdPreview.use(githubTheme,{
     Hljs:hljs
@@ -25,6 +26,7 @@ VMdPreview.use(githubTheme,{
 VMdPreview.use(createEmojiPlugin())
 VMdPreview.use(createLineNumbertPlugin())
 VMdPreview.use(createCopyCodePlugin())
+VMdPreview.use(createKatexPlugin())
 const app = createApp(App)
 app.use(ElementPlus)
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
